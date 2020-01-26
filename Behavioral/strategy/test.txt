@@ -1,0 +1,2 @@
+JPEG compress
+HIGH CONTRAST filter was apply
