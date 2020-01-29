@@ -6,11 +6,11 @@ from Behavioral.strategy.jpeg_compressor import JpegCompressor
 
 class ImageStore:
 
-    def __init__(self, compressor: Compressor, filtr: Filter):
+    def __init__(self, compressor: Compressor, filtr: Filter) -> None:
         self._compressor = compressor
         self._filter = filtr
 
-    def store(self, file_name):
+    def store(self, file_name) -> None:
         with open(file_name, "w") as file:
             file.write(self._compressor.compress())
             file.write("\n")
